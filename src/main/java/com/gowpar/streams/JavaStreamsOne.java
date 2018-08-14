@@ -3,7 +3,7 @@ package com.gowpar.streams;
 import java.io.IOException;
 import java.util.stream.IntStream;
 
-public class JavaStreams {
+public class JavaStreamsOne {
 
     public static void main(String[] args) throws IOException {
 
