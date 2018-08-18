@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8362b634-1d79-493f-8df9-9158817087b9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/gowpar/streams/JavaStreamsEleven.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gowpar/streams/JavaStreamsNine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gowpar/streams/JavaStreamsNine.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,14 +27,14 @@
         <counts>
           <entry key="csv" value="1" />
           <entry key="gitignore" value="2" />
-          <entry key="java" value="11" />
+          <entry key="java" value="12" />
           <entry key="txt" value="2" />
           <entry key="xml" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="11" />
+          <entry key="JAVA" value="12" />
           <entry key="PLAIN_TEXT" value="5" />
           <entry key="XML" value="2" />
         </counts>
@@ -43,13 +43,13 @@
         <counts>
           <entry key="csv" value="48" />
           <entry key="dummy" value="3" />
-          <entry key="java" value="2124" />
+          <entry key="java" value="2329" />
           <entry key="txt" value="158" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="2124" />
+          <entry key="JAVA" value="2329" />
           <entry key="PLAIN_TEXT" value="209" />
         </counts>
       </usages-collector>
@@ -90,11 +90,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/gowpar/streams/JavaStreamsTen.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="74" lean-forward="true" selection-start-line="15" selection-start-column="74" selection-end-line="15" selection-end-column="74" />
+            <state relative-caret-position="255">
+              <caret line="17" column="8" lean-forward="true" selection-start-line="11" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/gowpar/streams/JavaStreamsEleven.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="23" column="21" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -153,15 +165,6 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/gowpar/streams/JavaStreamsFive.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="29" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/gowpar/streams/JavaStreamsSix.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="225">
@@ -205,6 +208,7 @@
         <option value="$PROJECT_DIR$/src/main/java/com/gowpar/streams/data.csv" />
         <option value="$PROJECT_DIR$/src/main/java/com/gowpar/streams/JavaStreamsNine.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/gowpar/streams/JavaStreamsTen.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gowpar/streams/JavaStreamsEleven.java" />
       </list>
     </option>
   </component>
@@ -254,7 +258,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534594643665" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534595576548" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
@@ -272,9 +276,22 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.JavaStreamsTen">
+  <component name="RunManager" selected="Application.JavaStreamsEleven">
     <configuration name="JavaStreamEight" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="main.java.com.gowpar.streams.JavaStreamEight" />
+      <module name="java-streams" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="main.java.com.gowpar.streams.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JavaStreamsEleven" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="main.java.com.gowpar.streams.JavaStreamsEleven" />
       <module name="java-streams" />
       <extension name="coverage">
         <pattern>
@@ -312,19 +329,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JavaStreamsSix" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="main.java.com.gowpar.streams.JavaStreamsSix" />
-      <module name="java-streams" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="main.java.com.gowpar.streams.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="JavaStreamsTen" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="main.java.com.gowpar.streams.JavaStreamsTen" />
       <module name="java-streams" />
@@ -339,19 +343,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.JavaStreamsSix" />
       <item itemvalue="Application.JavaStreamsSeven" />
       <item itemvalue="Application.JavaStreamEight" />
       <item itemvalue="Application.JavaStreamsNine" />
       <item itemvalue="Application.JavaStreamsTen" />
+      <item itemvalue="Application.JavaStreamsEleven" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.JavaStreamsEleven" />
         <item itemvalue="Application.JavaStreamsTen" />
         <item itemvalue="Application.JavaStreamsNine" />
         <item itemvalue="Application.JavaStreamEight" />
         <item itemvalue="Application.JavaStreamsSeven" />
-        <item itemvalue="Application.JavaStreamsSix" />
       </list>
     </recent_temporary>
   </component>
@@ -407,13 +411,13 @@
       <window_info id="Image Layers" order="4" />
       <window_info active="true" content_ui="combo" id="Project" order="5" sideWeight="0.4991511" visible="true" weight="0.3653217" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="0" weight="0.32915717" />
+      <window_info anchor="bottom" id="Terminal" order="0" visible="true" weight="0.32915717" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="2" weight="0.32915717" />
       <window_info anchor="bottom" id="Version Control" order="3" />
       <window_info anchor="bottom" id="Message" order="4" />
       <window_info anchor="bottom" id="Find" order="5" />
-      <window_info anchor="bottom" id="Run" order="6" visible="true" weight="0.3257403" />
+      <window_info anchor="bottom" id="Run" order="6" weight="0.3257403" />
       <window_info anchor="bottom" id="Debug" order="7" weight="0.3997722" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
@@ -555,8 +559,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/gowpar/streams/JavaStreamsTen.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="74" lean-forward="true" selection-start-line="15" selection-start-column="74" selection-end-line="15" selection-end-column="74" />
+        <state relative-caret-position="255">
+          <caret line="17" column="8" lean-forward="true" selection-start-line="11" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gowpar/streams/JavaStreamsEleven.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="21" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
