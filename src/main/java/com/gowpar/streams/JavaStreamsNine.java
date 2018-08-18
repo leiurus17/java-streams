@@ -14,7 +14,7 @@ public class JavaStreamsNine {
         String path = System.getProperty("user.dir");
         String anotherPath = "/target/production/java-streams/main/java/com/gowpar/streams/";
 
-        // 8. Stream rows from text file and save to List
+        // 9. Stream rows from text file and save to List
         // WTF with the hacked path...
         List<String> bands = Files.lines(Paths.get(path + anotherPath + "bands.txt"))
                 .filter(x -> x.contains("lo"))
