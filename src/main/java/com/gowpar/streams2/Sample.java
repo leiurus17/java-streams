@@ -38,8 +38,8 @@ public class Sample {
                 people
                         .stream()
                         .filter(person -> person.getAge() > 18)
-                        .map(person -> person.getName())
-                        .map(name -> name.toUpperCase())
+                        .map(Person::getName)
+                        .map(String::toUpperCase)
                         .collect(Collectors.toList());
         System.out.println(names2);
     }
