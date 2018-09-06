@@ -3,6 +3,7 @@ package main.java.com.gowpar.streams2;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class Sample {
 
@@ -22,7 +23,8 @@ public class Sample {
     public static void main(String[] args) {
         List<Person> people = createPeople();
 
-        // get, in uppercase, the names of all female older than 18
+        // Get, in uppercase, the names of all female older than 18
+        // Old way
         List<String> names = new ArrayList<>();
         for (Person person : people) {
             if (person.getAge() > 18) {
@@ -30,5 +32,15 @@ public class Sample {
             }
         }
         System.out.println(names);
+
+        // Streams way
+        List<String> names2 =
+                people
+                        .stream()
+                        .filter(person -> person.getAge() > 18)
+                        .map(person -> person.getName())
+                        .map(name -> name.toUpperCase())
+                        .collect(Collectors.toList());
+        System.out.println(names2);
     }
 }
