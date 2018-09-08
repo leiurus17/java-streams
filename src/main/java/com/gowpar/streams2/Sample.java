@@ -77,5 +77,17 @@ public class Sample {
                         .filter(person -> person.getAge() < 18)
                         .count()
         );
+
+        List<String> names3 =
+                people.stream()
+                    .filter(person -> person.getAge() > 17)
+                    .map(person -> person.getName().toUpperCase())
+                    .collect(
+                            () -> new ArrayList<>(),
+                            (list, name) -> list.add(name),
+                            (list1, list2) -> list1.addAll(list2)
+                    );
+
+        System.out.println(names3);
     }
 }
