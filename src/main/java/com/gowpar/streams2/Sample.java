@@ -42,5 +42,12 @@ public class Sample {
                         .map(String::toUpperCase)
                         .collect(Collectors.toList());
         System.out.println(names2);
+
+        // Get all the Males
+        people.stream()
+                .filter(person -> person.getGender() == Gender.MALE)
+                .map(person -> new Person(person.getName().toUpperCase(),
+                    person.getGender(), person.getAge()))
+                .forEach(System.out::println);
     }
 }
