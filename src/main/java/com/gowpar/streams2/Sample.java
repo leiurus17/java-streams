@@ -3,6 +3,8 @@ package main.java.com.gowpar.streams2;
 import java.util.*;
 import java.util.stream.Collectors;
 
+import static java.util.stream.Collectors.groupingBy;
+
 public class Sample {
 
     public static List<Person> createPeople() {
@@ -100,5 +102,19 @@ public class Sample {
                     ));
 
         System.out.println(map);
+
+        Map<String, List<Person>> map2 =
+                people.stream()
+                    .collect(groupingBy(Person::getName));
+
+        System.out.println(map2);
+
+        // Find the first person whose name is four letters but is older than 25
+        System.out.println(
+                people.stream()
+                    .filter(person -> person.getName().length() == 4)
+                    .filter(person -> person.getAge() > 25)
+                    .findFirst()
+        );
     }
 }
