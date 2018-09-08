@@ -47,12 +47,24 @@ public class Sample {
         people.stream()
                 .filter(person -> person.getGender() == Gender.MALE)
                 .map(person -> new Person(person.getName().toUpperCase(),
-                    person.getGender(), person.getAge()))
+                        person.getGender(), person.getAge()))
                 .forEach(System.out::println);
 
         // Add all the age
-        System.out.println(people.stream()
-                .mapToInt(Person::getAge)
-                .sum());
+        System.out.println(
+                people.stream()
+                        .mapToInt(Person::getAge)
+                        .sum());
+
+        // Max age
+        System.out.println(
+                people.stream()
+                        .max((person1, person2) ->
+                                person1.getAge() > person2.getAge() ? 1 : -1));
+        // Min age
+        System.out.println(
+                people.stream()
+                        .min((person1, person2) ->
+                                person1.getAge() > person2.getAge() ? 1 : -1));
     }
 }
