@@ -1,8 +1,6 @@
 package main.java.com.gowpar.streams2;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
 import java.util.stream.Collectors;
 
 public class Sample {
@@ -85,5 +83,22 @@ public class Sample {
                     .collect(Collectors.toList());
 
         System.out.println(names3);
+
+        Set<String> maleNames =
+                people.stream()
+                    .filter(person -> person.getGender() == Gender.MALE)
+                    .map(Person::getName)
+                    .collect(Collectors.toSet());
+
+        System.out.println(maleNames);
+
+        Map<String, Person> map =
+                people.stream()
+                    .collect(Collectors.toMap(
+                            person -> person.getName() + ":" + person.getAge(),
+                            person -> person
+                    ));
+
+        System.out.println(map);
     }
 }
