@@ -54,17 +54,28 @@ public class Sample {
         System.out.println(
                 people.stream()
                         .mapToInt(Person::getAge)
-                        .sum());
+                        .sum()
+        );
 
         // Max age
         System.out.println(
                 people.stream()
                         .max((person1, person2) ->
-                                person1.getAge() > person2.getAge() ? 1 : -1));
+                                person1.getAge() > person2.getAge() ? 1 : -1)
+        );
+
         // Min age
         System.out.println(
                 people.stream()
                         .min((person1, person2) ->
-                                person1.getAge() > person2.getAge() ? 1 : -1));
+                                person1.getAge() > person2.getAge() ? 1 : -1)
+        );
+
+        // Count those who are less than 18 years old
+        System.out.println(
+                people.stream()
+                        .filter(person -> person.getAge() < 18)
+                        .count()
+        );
     }
 }
