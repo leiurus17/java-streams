@@ -49,5 +49,10 @@ public class Sample {
                 .map(person -> new Person(person.getName().toUpperCase(),
                     person.getGender(), person.getAge()))
                 .forEach(System.out::println);
+
+        // Add all the age
+        System.out.println(people.stream()
+                .map(Person::getAge)
+                .reduce(0, (carry, age) -> carry + age));
     }
 }
