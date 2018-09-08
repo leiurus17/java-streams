@@ -82,11 +82,7 @@ public class Sample {
                 people.stream()
                     .filter(person -> person.getAge() > 17)
                     .map(person -> person.getName().toUpperCase())
-                    .collect(
-                            () -> new ArrayList<>(),
-                            (list, name) -> list.add(name),
-                            (list1, list2) -> list1.addAll(list2)
-                    );
+                    .collect(Collectors.toList());
 
         System.out.println(names3);
     }
