@@ -52,7 +52,7 @@ public class Sample {
 
         // Add all the age
         System.out.println(people.stream()
-                .map(Person::getAge)
-                .reduce(0, (carry, age) -> carry + age));
+                .mapToInt(Person::getAge)
+                .sum());
     }
 }
